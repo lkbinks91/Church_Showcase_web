@@ -12,7 +12,7 @@ Ce projet est une maquette de site web pour la Paroisse de Limoilou. Il s'agit d
 - **Statut**: Maquette / Démonstration
 - **Version**: 1.0
 - **Auteur**: Leon Maxime
-- **Date**: 2024
+- **Date**: 2025
 
 ## 📋 Pages Disponibles
 1. **Accueil** (`index.html`)
@@ -64,4 +64,4 @@ Cette version est une maquette et n'est pas encore fonctionnelle. Certaines fonc
 Cette maquette sera régulièrement mise à jour pour refléter l'évolution du projet.
 
 ## 📄 Licence
-Tous droits réservés © 2024 Paroisse de Limoilou
+Tous droits réservés © 2025 Paroisse de Limoilou
