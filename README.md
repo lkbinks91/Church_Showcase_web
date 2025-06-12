@@ -1,46 +1,67 @@
-# Church Showcase Website
+# Maquette Site Web - Paroisse de Limoilou
 
-This project is a clean and professional showcase website for a church, built using HTML, CSS, Bootstrap, and JavaScript.
+## 📝 Description
+Ce projet est une maquette de site web pour la Paroisse de Limoilou. Il s'agit d'une version de démonstration qui présente la structure et le design futur du site officiel. Cette maquette a été créée par Leon Maxime.
 
-## Project Structure
+## 🎯 Objectifs
+- Présenter une vision du futur site web de la paroisse
+- Démontrer les fonctionnalités principales
+- Servir de base pour le développement du site final
 
-```
-church-showcase-website
-├── css
-│   ├── style.css          # Custom styles for the website
-│   └── bootstrap.min.css  # Minified Bootstrap CSS framework
-├── js
-│   └── main.js           # JavaScript for interactivity
-├── index.html            # Main HTML document for the website
-└── README.md             # Documentation for the project
-```
+## 🚧 État du Projet
+- **Statut**: Maquette / Démonstration
+- **Version**: 1.0
+- **Auteur**: Leon Maxime
+- **Date**: 2024
 
-## Installation
+## 📋 Pages Disponibles
+1. **Accueil** (`index.html`)
+   - Présentation générale
+   - Carrousel d'images
+   - Actualités et événements
 
-1. Clone the repository:
-   ```
-   git clone <repository-url>
-   ```
-2. Navigate to the project directory:
-   ```
-   cd church-showcase-website
-   ```
+2. **Paroisse** (`paroisse.html`)
+   - Histoire de la paroisse
+   - Valeurs
+   - Équipe paroissiale
 
-## Usage
+3. **Horaire Célébrations** (`horaire.html`)
+   - Horaires des messes
+   - Événements spéciaux
+   - Adoration eucharistique
 
-- Open `index.html` in your web browser to view the website.
-- Customize the content in `index.html`, `css/style.css`, and `js/main.js` as needed.
+4. **Intention de Messe** (`intentionMesse.html`)
+   - Formulaire de demande
+   - Informations sur les intentions
+   - FAQ
 
-## Features
+5. **En Direct** (`direct.html`)
+   - Diffusion des célébrations
+   - Replay des messes
 
-- Responsive design using Bootstrap
-- Custom styles for a professional appearance
-- JavaScript functionality for enhanced interactivity
+6. **Contact** (`contact.html`)
+   - Coordonnées
+   - Formulaire de contact
+   - Localisation
 
-## Contributing
+## 🛠️ Technologies Utilisées
+- HTML5
+- CSS3
+- Bootstrap 5.3.0
+- Font Awesome 6.0.0
+- Google Fonts
+- JavaScript
 
-Feel free to submit issues or pull requests for improvements or bug fixes. 
+## ⚠️ Note Importante
+Cette version est une maquette et n'est pas encore fonctionnelle. Certaines fonctionnalités sont simulées pour démonstration.
 
-## License
+## 📦 Installation
+1. Clonez le repository
+2. Ouvrez les fichiers HTML dans votre navigateur
+3. Aucune installation supplémentaire n'est nécessaire
 
-This project is licensed under the MIT License.
+## 🔄 Mise à Jour
+Cette maquette sera régulièrement mise à jour pour refléter l'évolution du projet.
+
+## 📄 Licence
+Tous droits réservés © 2024 Paroisse de Limoilou
