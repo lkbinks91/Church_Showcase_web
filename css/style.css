@@ -1,0 +1,184 @@
+:root {
+    --primary-color: #8B5E3C;
+    --secondary-color: #1a237e;
+}
+
+
+.navbar {
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    padding: 0.75rem 1rem;
+}
+
+.navbar-brand {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #8B5E3C;
+    font-weight: bold;
+}
+
+.navbar-brand:hover {
+    text-decoration: none;
+    color: #6b4423;
+}
+
+.navbar-nav .nav-link {
+    font-weight: 500;
+    font-size: 1rem;
+    margin: 0 0.5rem;
+    color: #555;
+    transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover,
+.navbar-nav .nav-link.active {
+    color: #8B5E3C;
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.navbar-nav .donation-btn {
+    background-color: #8B5E3C;
+    border-color: #8B5E3C;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+}
+
+.navbar-nav .donation-btn:hover {
+    background-color: #6b4423;
+    border-color: #6b4423;
+}
+
+/* Mobile adjustments */
+@media (max-width: 768px) {
+    .navbar-nav .nav-link {
+        margin: 0.5rem 0;
+        text-align: center;
+    }
+
+    .donation-btn {
+        width: 100%;
+        margin: 0.5rem 0;
+    }
+}
+
+.hero-slide {
+    height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                url('/api/placeholder/1920/1080');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.carousel-item {
+    height: 100vh;
+}
+
+.carousel-controls {
+    position: absolute;
+    bottom: 2rem;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+
+.stat-card {
+    background: white;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.stat-card:hover {
+    transform: translateY(-10px);
+}
+
+.number {
+    font-size: 3rem;
+    color: var(--primary-color);
+    font-weight: bold;
+    opacity: 0.2;
+    display: block;
+    margin-bottom: 1rem;
+}
+
+.stat-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.25rem;
+}
+
+.stat-card p {
+    color: #666;
+    margin: 0;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .hero-slide h1 {
+        font-size: 2.5rem;
+    }
+    
+    .stat-card {
+        margin-bottom: 1rem;
+    }
+}
+.shadow-overlay::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    z-index: 1;
+}
+
+.carousel-item .container {
+    position: relative;
+    z-index: 2;
+}
+
+.color-custom {
+    color: #FFD700; 
+}*/
+
+/* Position initiale des cartes */
+.slide-in-left {
+    transform: translateY(-100%);
+    opacity: 0;
+    animation: slideFromLeft 1.5s ease-in-out forwards;
+}
+
+.slide-in-right {
+    transform: translateY(100%);
+    opacity: 0;
+    animation: slideFromRight 1.5s ease-in-out forwards;
+}
+
+/* Animation pour la carte venant de la gauche */
+@keyframes slideFromLeft {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* Animation pour la carte venant de la droite */
+@keyframes slideFromRight {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+

@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Horaire - Paroisse de Limoilou</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <i class="fas fa-church me-2"></i><span class="navbar-title">Paroisse de Limoilou</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./paroisse.html">Paroisse</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./horaire.html">Horaire célébrations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./intentionMesse.html">Intention de messe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./direct.html">En direct</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                </ul>
+                <button class="btn btn-warning">Faire un don</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="horaire-hero" class="py-5" style="background-image: url('./img/bg4.jpg'); background-size: cover; background-position: center; min-height: 100vh; position: relative;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+        <div class="container position-relative" style="z-index: 2; color: #fff;">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeInDown">Horaires des Célébrations</h1>
+                    <p class="lead mb-5 animate__animated animate__fadeInUp">Rejoignez-nous pour nos célébrations hebdomadaires</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Horaires Réguliers -->
+    <section id="horaires-reguliers" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center text-secondary mb-5">Horaires Réguliers</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow mb-4 hover-card">
+                        <div class="card-body">
+                            <h3 class="h4 mb-4 text-center">Messes Dominicales</h3>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th>Jour</th>
+                                            <th>Heure</th>
+                                            <th>Lieu</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="animate__animated animate__fadeIn">
+                                            <td><i class="fas fa-calendar-day me-2"></i>Samedi</td>
+                                            <td><i class="fas fa-clock me-2"></i>17:00</td>
+                                            <td><i class="fas fa-church me-2"></i>Église principale</td>
+                                        </tr>
+                                        <tr class="animate__animated animate__fadeIn" style="animation-delay: 0.2s;">
+                                            <td><i class="fas fa-calendar-day me-2"></i>Dimanche</td>
+                                            <td><i class="fas fa-clock me-2"></i>09:00</td>
+                                            <td><i class="fas fa-church me-2"></i>Église principale</td>
+                                        </tr>
+                                        <tr class="animate__animated animate__fadeIn" style="animation-delay: 0.4s;">
+                                            <td><i class="fas fa-calendar-day me-2"></i>Dimanche</td>
+                                            <td><i class="fas fa-clock me-2"></i>11:00</td>
+                                            <td><i class="fas fa-church me-2"></i>Chapelle</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="card shadow mb-4 hover-card">
+                        <div class="card-body">
+                            <h3 class="h4 mb-4 text-center">Messes en Semaine</h3>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th>Jour</th>
+                                            <th>Heure</th>
+                                            <th>Lieu</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="animate__animated animate__fadeIn" style="animation-delay: 0.6s;">
+                                            <td><i class="fas fa-calendar-week me-2"></i>Lundi - Vendredi</td>
+                                            <td><i class="fas fa-clock me-2"></i>08:30</td>
+                                            <td><i class="fas fa-church me-2"></i>Chapelle</td>
+                                        </tr>
+                                        <tr class="animate__animated animate__fadeIn" style="animation-delay: 0.8s;">
+                                            <td><i class="fas fa-calendar-day me-2"></i>Mercredi</td>
+                                            <td><i class="fas fa-clock me-2"></i>19:00</td>
+                                            <td><i class="fas fa-church me-2"></i>Église principale</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Événements Spéciaux -->
+    <section id="evenements-speciaux" class="py-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center text-secondary mb-5">Événements Spéciaux</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow h-100 hover-card">
+                        <div class="card-body">
+                            <h3 class="h4 mb-3"><i class="fas fa-star text-warning me-2"></i>Messe de Noël</h3>
+                            <p class="mb-2"><i class="fas fa-calendar-alt me-2 text-primary"></i>24 décembre 2024</p>
+                            <p class="mb-2"><i class="fas fa-clock me-2 text-primary"></i>19:00</p>
+                            <p class="mb-2"><i class="fas fa-map-marker-alt me-2 text-primary"></i>Église principale</p>
+                            <p class="mb-0">Célébration spéciale de la Nativité avec chants traditionnels.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card shadow h-100 hover-card">
+                        <div class="card-body">
+                            <h3 class="h4 mb-3"><i class="fas fa-star text-warning me-2"></i>Messe de Pâques</h3>
+                            <p class="mb-2"><i class="fas fa-calendar-alt me-2 text-primary"></i>31 mars 2024</p>
+                            <p class="mb-2"><i class="fas fa-clock me-2 text-primary"></i>10:00</p>
+                            <p class="mb-2"><i class="fas fa-map-marker-alt me-2 text-primary"></i>Église principale</p>
+                            <p class="mb-0">Célébration solennelle de la Résurrection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Adoration -->
+    <section id="adoration" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center text-secondary mb-5">Adoration Eucharistique</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow hover-card">
+                        <div class="card-body">
+                            <div class="text-center mb-4">
+                                <i class="fas fa-church fa-3x text-primary mb-3 animate__animated animate__pulse animate__infinite"></i>
+                                <h3 class="h4">Chapelle d'Adoration</h3>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead class="table-primary">
+                                        <tr>
+                                            <th>Jour</th>
+                                            <th>Heure</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr class="animate__animated animate__fadeIn" style="animation-delay: 1s;">
+                                            <td><i class="fas fa-calendar-week me-2"></i>Lundi - Vendredi</td>
+                                            <td><i class="fas fa-clock me-2"></i>09:00 - 17:00</td>
+                                        </tr>
+                                        <tr class="animate__animated animate__fadeIn" style="animation-delay: 1.2s;">
+                                            <td><i class="fas fa-calendar-day me-2"></i>Samedi</td>
+                                            <td><i class="fas fa-clock me-2"></i>09:00 - 12:00</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <p class="text-center mt-4">
+                                <i class="fas fa-info-circle me-2 text-primary"></i>
+                                La chapelle est ouverte pour l'adoration silencieuse. Tous sont les bienvenus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <p>&copy; 2025 Paroisse de Limoilou | Tous droits réservés</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom JS -->
+    <script>
+        // Animation au scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                    }
+                });
+            });
+
+            cards.forEach(card => observer.observe(card));
+        });
+
+        // Effet hover sur les cartes
+        document.querySelectorAll('.hover-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+    </script>
+</body>
+</html>

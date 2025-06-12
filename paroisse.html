@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paroisse - Paroisse de Limoilou</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <i class="fas fa-church me-2"></i><span class="navbar-title">Paroisse de Limoilou</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./paroisse.html">Paroisse</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./horaire.html">Horaire célébrations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./intentionMesse.html">Intention de messe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./direct.html">En direct</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                </ul>
+                <button class="btn btn-warning">Faire un don</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="paroisse-hero" class="py-5" style="background-image: url('./img/bg2.jpg'); background-size: cover; background-position: center; min-height: 100vh; position: relative;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+        <div class="container position-relative" style="z-index: 2; color: #fff;">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold mb-4">Notre Paroisse</h1>
+                    <p class="lead mb-5">Une communauté de foi, d'espérance et d'amour</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Histoire -->
+    <section id="histoire" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center text-secondary mb-5">Notre Histoire</h2>
+            <div class="row align-items-center">
+                <div class="col-md-6 mb-4 mb-md-0">
+                    <img src="./img/bg3.jpg" class="img-fluid rounded shadow" alt="Histoire de la paroisse">
+                </div>
+                <div class="col-md-6">
+                    <p class="lead">
+                        Fondée en 1923, la Paroisse de Limoilou est un lieu de culte historique qui a servi de point central pour la communauté catholique locale pendant près d'un siècle. Notre église, avec son architecture distinctive et son ambiance accueillante, continue d'être un lieu de rassemblement important pour les fidèles de tous âges.
+                    </p>
+                    <p class="lead">
+                        Au fil des années, nous avons développé une communauté dynamique qui célèbre la foi, soutient les familles et sert les personnes dans le besoin. Notre mission est de partager l'amour de Dieu et de créer un environnement où chacun peut grandir spirituellement.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Valeurs -->
+    <section id="valeurs" class="py-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center text-secondary mb-5">Nos Valeurs</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-heart fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title h4">Foi</h3>
+                            <p class="card-text">Nous cultivons une foi vivante et authentique qui guide nos actions et nos décisions quotidiennes.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-hands-helping fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title h4">Service</h3>
+                            <p class="card-text">Nous nous engageons à servir notre communauté et à répondre aux besoins des plus vulnérables.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow h-100">
+                        <div class="card-body text-center">
+                            <i class="fas fa-users fa-3x mb-3 text-primary"></i>
+                            <h3 class="card-title h4">Communauté</h3>
+                            <p class="card-text">Nous favorisons des relations authentiques et un esprit de famille au sein de notre paroisse.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Équipe -->
+    <section id="equipe" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center text-secondary mb-5">Notre Équipe</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-tie fa-5x mb-3 text-primary"></i>
+                            <h3 class="card-title h4">Père Jean Dupont</h3>
+                            <p class="card-text">Curé de la paroisse</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-tie fa-5x mb-3 text-primary"></i>
+                            <h3 class="card-title h4">Père Marie Martin</h3>
+                            <p class="card-text">Vicaire</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <i class="fas fa-user-tie fa-5x mb-3 text-primary"></i>
+                            <h3 class="card-title h4">Sophie Tremblay</h3>
+                            <p class="card-text">Coordinatrice paroissiale</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <p>&copy; 2025 Paroisse de Limoilou | Tous droits réservés</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Paroisse de Limoilou (Maquette)</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div class="bg-warning text-dark py-2 text-center" style="position: fixed; top: 0; left: 0; right: 0; z-index: 1030;">
+        <strong>⚠️ MAQUETTE - Site en développement | Auteur: Leon Maxime</strong> | Ceci est une version démo 
+    </div>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light shadow-sm" style="margin-top: 38px;">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <i class="fas fa-church me-2"></i><span class="navbar-title">Paroisse St-Michel</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="#home">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./paroisse.html">Paroisse</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./horaire.html">Horaire célébrations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./intentionMesse.html">Intention de messe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./direct.html">En direct</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                </ul>
+                <button class="btn btn-warning">Faire un don</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section avec Carousel -->
+    <section id="home" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/bg1.jpg'); background-size: cover; height: 100vh;">
+                <div class="container text-center text-white d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+                    <h1 class="display-4 fw-bold" style="text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);">Bienvenue à la Paroisse St-michel</h1>
+                    <p class="lead" style="text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);">Un lieu de prière, de communauté et de paix</p>
+                    <a href="#about" class="btn btn-outline-light mt-3">En savoir plus</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('img/bg2.jpg'); background-size: cover; height: 100vh;">
+                <div class="container text-center text-white d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+                    <h1 class="display-4 fw-bold">Rejoignez notre communauté</h1>
+                    <p class="lead">Participez à nos événements et services</p>
+                    <a href="#contact" class="btn btn-outline-light mt-3">Contactez-nous</a>
+                </div>
+            </div>
+            <div class="carousel-item" style="background-image: url('img/bg5.jpg'); background-size: cover; height: 100vh;">
+                <div class="container text-center text-white d-flex flex-column justify-content-center align-items-center" style="height: 100vh;">
+                    <h1 class="display-4 fw-bold">Faire un don</h1>
+                    <p class="lead">Soutenez notre paroisse</p>
+                    <a href="#don" class="btn btn-warning mt-3">Contribuer maintenant</a>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#home" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Précédent</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#home" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Suivant</span>
+        </button>
+    </section>
+
+    <!-- Section Introduction -->
+    <section id="introduction" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6 text-center mb-4 mb-md-0">
+                    <blockquote class="blockquote">
+                        <p class="fst-italic">"Que tout ce que vous faites soit fait avec amour."</p>
+                        <footer class="blockquote-footer text-muted">1 Corinthiens 16:14</footer>
+                    </blockquote>
+                </div>
+                <div class="col-md-6">
+                    <h2 class="fw-bold text-secondary d-flex justify-content-center">Notre Mission</h2>
+                    <p class="lead">À la Paroisse de Limoilou, notre mission est d'offrir un espace spirituel accueillant, de renforcer les liens communautaires et d'inspirer à vivre selon les enseignements de l'Évangile. Rejoignez-nous pour construire ensemble une communauté empreinte de foi et d'amour.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Actualités -->
+    <section id="news" class="py-5">
+        <div class="container">
+            <h2 class="display-5 fw-bold text-center text-secondary mb-5">Actualités et Événements</h2>
+            <div class="row">
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-calendar-event mb-3 text-primary" viewBox="0 0 16 16" aria-label="Icône messe spéciale de Noël">
+                                <path d="M3.5 0a.5.5 0 0 1 .5.5V1h8V.5a.5.5 0 0 1 1 0V1h1a2 2 0 0 1 2 2v11a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2V3a2 2 0 0 1 2-2h1V.5a.5.5 0 0 1 .5-.5zM1 4v10a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V4H1zm11 2a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5zM4.5 6a.5.5 0 0 1 .5.5v3a.5.5 0 0 1-1 0v-3a.5.5 0 0 1 .5-.5z"/>
+                            </svg>
+                            <h5 class="card-title">Messe spéciale de Noël</h5>
+                            <p class="card-text">Venez célébrer avec nous le 25 décembre à 19h.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-book-half mb-3 text-primary" viewBox="0 0 16 16" aria-label="Icône conférence spirituelle">
+                                <path d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z"/>
+                            </svg>
+                            <h5 class="card-title">Conférence spirituelle</h5>
+                            <p class="card-text">Découvrez des enseignements enrichissants le 12 janvier.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <div class="card shadow">
+                        <div class="card-body text-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" fill="currentColor" class="bi bi-people-fill mb-3 text-primary" viewBox="0 0 16 16" aria-label="Icône activités solidaires">
+                                <path d="M7 14s-1 0-1-1 1-4 5-4 5 3 5 4-1 1-1 1H7zm4-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"/>
+                                <path fill-rule="evenodd" d="M5.216 14A2.238 2.238 0 0 1 5 13c0-1.355.68-2.75 1.936-3.72A6.325 6.325 0 0 0 5 9c-4 0-5 3-5 4s1 1 1 1h4.216z"/>
+                                <path d="M4.5 8a2.5 2.5 0 1 0 0-5 2.5 2.5 0 0 0 0 5z"/>
+                            </svg>
+                            <h5 class="card-title">Activités solidaires</h5>
+                            <p class="card-text">Participez à nos initiatives locales.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="additional-content" class="py-5 bg-light">
+        <div class="container">
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6 order-md-1">
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur lacinia urna nec sapien aliquet, nec tempus turpis gravida.
+                    </p>
+                </div>
+                <div class="col-md-6 order-md-2 text-center">
+                    <img src="./img/bgContact.jpg" class="img-fluid rounded" alt="Image exemple">
+                </div>
+            </div>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6 order-md-2">
+                    <p class="lead">
+                        Praesent varius, tortor non vehicula aliquam, nisl erat posuere elit, vitae malesuada metus risus nec lectus.
+                    </p>
+                </div>
+                <div class="col-md-6 order-md-1 text-center">
+                    <img src="./img/bgd.jpg" class="img-fluid rounded" alt="Image exemple">
+                </div>
+            </div>
+            <div class="row align-items-center mb-4">
+                <div class="col-md-6 order-md-1">
+                    <p class="lead">
+                        Sed scelerisque nisl sit amet mi efficitur, et vestibulum lectus pretium. Donec luctus, urna eget tincidunt tincidunt, lacus lorem luctus velit, non tincidunt nisi nisl sit amet tortor.
+                    </p>
+                </div>
+                <div class="col-md-6 order-md-2 text-center">
+                    <img src="./img/cont.jpeg" class="img-fluid rounded" alt="Image exemple">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <p>&copy; 2025 Paroisse de Limoilou | Tous droits réservés</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

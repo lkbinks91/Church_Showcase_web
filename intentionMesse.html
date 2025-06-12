@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intention de Messe - Paroisse de Limoilou</title>
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light fixed-top bg-light shadow-sm">
+        <div class="container">
+            <a class="navbar-brand" href="./index.html">
+                <i class="fas fa-church me-2"></i><span class="navbar-title">Paroisse de Limoilou</span>
+            </a>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-between" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item"><a class="nav-link" href="./index.html">Accueil</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./paroisse.html">Paroisse</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./horaire.html">Horaire célébrations</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="./intentionMesse.html">Intention de messe</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./direct.html">En direct</a></li>
+                    <li class="nav-item"><a class="nav-link" href="./contact.html">Contact</a></li>
+                </ul>
+                <button class="btn btn-warning">Faire un don</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="intention-hero" class="py-5" style="background-image: url('./img/bg5.jpg'); background-size: cover; background-position: center; min-height: 100vh; position: relative;">
+        <div style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5);"></div>
+        <div class="container position-relative" style="z-index: 2; color: #fff;">
+            <div class="row min-vh-100 align-items-center">
+                <div class="col-12 text-center">
+                    <h1 class="display-4 fw-bold mb-4 animate__animated animate__fadeInDown">Intention de Messe</h1>
+                    <p class="lead mb-5 animate__animated animate__fadeInUp">Offrez une messe pour vos intentions personnelles</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Information -->
+    <section id="information" class="py-5 bg-light">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow mb-4 hover-card">
+                        <div class="card-body">
+                            <h2 class="h3 text-center mb-4">Qu'est-ce qu'une intention de messe ?</h2>
+                            <p class="lead text-center mb-4">
+                                Une intention de messe est une prière spéciale offerte pour une personne ou une situation particulière. 
+                                C'est un moyen de confier vos intentions à Dieu par l'intermédiaire de la célébration eucharistique.
+                            </p>
+                            <div class="row text-center">
+                                <div class="col-md-4 mb-3">
+                                    <i class="fas fa-heart fa-3x text-primary mb-3"></i>
+                                    <h3 class="h5">Pour les défunts</h3>
+                                    <p>Pour le repos de l'âme d'un être cher</p>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <i class="fas fa-birthday-cake fa-3x text-primary mb-3"></i>
+                                    <h3 class="h5">Pour les vivants</h3>
+                                    <p>Pour une personne en particulier</p>
+                                </div>
+                                <div class="col-md-4 mb-3">
+                                    <i class="fas fa-pray fa-3x text-primary mb-3"></i>
+                                    <h3 class="h5">Pour une situation</h3>
+                                    <p>Pour une intention particulière</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formulaire -->
+    <section id="formulaire" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="card shadow hover-card">
+                        <div class="card-body">
+                            <h2 class="h3 text-center mb-4">Demander une intention de messe</h2>
+                            <form id="intentionForm" class="needs-validation" novalidate>
+                                <div class="mb-3">
+                                    <label for="nom" class="form-label">Votre nom complet *</label>
+                                    <input type="text" class="form-control" id="nom" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="email" class="form-label">Votre email *</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="telephone" class="form-label">Votre téléphone</label>
+                                    <input type="tel" class="form-control" id="telephone">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="type" class="form-label">Type d'intention *</label>
+                                    <select class="form-select" id="type" required>
+                                        <option value="">Choisir...</option>
+                                        <option value="defunt">Pour un défunt</option>
+                                        <option value="vivant">Pour une personne vivante</option>
+                                        <option value="situation">Pour une situation particulière</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="intention" class="form-label">Votre intention *</label>
+                                    <textarea class="form-control" id="intention" rows="4" required></textarea>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="date" class="form-label">Date souhaitée (optionnel)</label>
+                                    <input type="date" class="form-control" id="date">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="donation" class="form-label">Offrande suggérée</label>
+                                    <div class="input-group">
+                                        <span class="input-group-text">$</span>
+                                        <input type="number" class="form-control" id="donation" value="20" min="0">
+                                    </div>
+                                    <small class="text-muted">L'offrande est libre, mais une contribution de 20$ est suggérée</small>
+                                </div>
+                                <div class="text-center">
+                                    <button type="submit" class="btn btn-primary btn-lg">Soumettre l'intention</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section FAQ -->
+    <section id="faq" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Questions Fréquentes</h2>
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <div class="accordion" id="faqAccordion">
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq1">
+                                    Combien coûte une intention de messe ?
+                                </button>
+                            </h3>
+                            <div id="faq1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    L'offrande est libre, mais une contribution de 20$ est suggérée pour couvrir les frais de la paroisse.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq2">
+                                    Quand la messe sera-t-elle célébrée ?
+                                </button>
+                            </h3>
+                            <div id="faq2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Nous essayons de respecter la date souhaitée, mais nous ne pouvons pas garantir une date spécifique. Nous vous contacterons pour confirmer la date.
+                                </div>
+                            </div>
+                        </div>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq3">
+                                    Comment puis-je payer ?
+                                </button>
+                            </h3>
+                            <div id="faq3" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                                <div class="accordion-body">
+                                    Vous pouvez payer en espèces, par chèque ou par virement bancaire. Les détails de paiement vous seront fournis après la soumission de votre demande.
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-4 bg-dark text-white text-center">
+        <p>&copy; 2025 Paroisse de Limoilou | Tous droits réservés</p>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+    <!-- Animate.css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <!-- Custom JS -->
+    <script>
+        // Animation au scroll
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('animate__animated', 'animate__fadeInUp');
+                    }
+                });
+            });
+
+            cards.forEach(card => observer.observe(card));
+        });
+
+        // Effet hover sur les cartes
+        document.querySelectorAll('.hover-card').forEach(card => {
+            card.addEventListener('mouseenter', function() {
+                this.style.transform = 'translateY(-5px)';
+                this.style.transition = 'transform 0.3s ease';
+            });
+            
+            card.addEventListener('mouseleave', function() {
+                this.style.transform = 'translateY(0)';
+            });
+        });
+
+        // Validation du formulaire
+        const form = document.getElementById('intentionForm');
+        form.addEventListener('submit', function(event) {
+            if (!form.checkValidity()) {
+                event.preventDefault();
+                event.stopPropagation();
+            }
+            form.classList.add('was-validated');
+        });
+    </script>
+</body>
+</html>
