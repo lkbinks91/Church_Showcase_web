@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /private/
+Disallow: /includes/
+Disallow: /config/
+Disallow: /logs/
+Disallow: /temp/
+
+# Sitemap
+Sitemap: https://church-showcase-web.vercel.app/sitemap.xml 

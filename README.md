@@ -1,3 +1,5 @@
+![Audit Lighthouse - Paroisse St-Michel](img/HighScore_SEO.png)
+
 # Maquette Site Web - Paroisse de Limoilou
 
 ## 📝 Description
